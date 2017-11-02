@@ -13,10 +13,11 @@ int main()
 			{
 				if(x3 * x3 == x1* x1 + x2 * x2) 
 				{
-					cout<<x1<<'\t'<<x2<<'\t'<<x3<<endl;
+					cout<<x1<<'\t'<<x2<<'\t'<<x3<<endl;//Please make a breakpoint here and then debug, or you cant get the right result
 				}
 			}
 		}
 	}
 	system("pause");
+
 }
