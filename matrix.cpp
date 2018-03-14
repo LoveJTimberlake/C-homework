@@ -100,6 +100,11 @@ Matrix& Matrix ::operator*(int s)
 	return _M;
 }
 
+Matrix& operator*(int s,Matrix &M)
+{
+	return M * s;
+}
+
 bool Matrix::operator==(const Matrix& M)
 {
 	for(int i = 0; i < 2; i++)
