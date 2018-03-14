@@ -13,6 +13,7 @@ public:
 	Matrix& operator-=(const Matrix& M);
 	Matrix& operator*=(const Matrix& M);
 	Matrix& operator*(int i);
+	friend Matrix & operator*(int i, Matrix & M);
 	bool operator==(const Matrix& M);
 	bool operator!=(const Matrix& M);
 	friend ostream& operator<<(ostream & os, const Matrix& M);
