@@ -2,7 +2,6 @@
 #include<string>
 using namespace std;
 
-// Person´¦ÓĞÒ»¸öº¯Êı½øĞĞÎ¹Ñø¶¯Îï£¬ĞèÒÔÈıÖÖ¶¯Îï¼°EnclosureÎªÓÑÀàÀ´¶¨Òå
 
 class Animal
 {
@@ -62,19 +61,19 @@ private:
 
 };
 
-class Enclosure		//´óÏó£¬³¤¾±Â¹£¬ºï×Ó   »¨Éú£¬ºúÂÜ²·£¬Ïã½¶
+class Enclosure		//å¤§è±¡ï¼Œé•¿é¢ˆé¹¿ï¼ŒçŒ´å­   èŠ±ç”Ÿï¼Œèƒ¡èåœï¼Œé¦™è•‰
 {
 public:
 	Enclosure();
 	~Enclosure() {} ;
 	bool Judge_Mess_Add_Day();
-	int Return_Closed_Days();	//¶¯ÎïÔ°³õÊ¼»¯Ê±´´½¨µØÇø¶ÔÏó³¤¶ÈÎª3µÄÊı×é²¢ÔÚ×îºó±éÀúÊä³öÊı¾İ
+	int Return_Closed_Days();	//åŠ¨ç‰©å›­åˆå§‹åŒ–æ—¶åˆ›å»ºåœ°åŒºå¯¹è±¡é•¿åº¦ä¸º3çš„æ•°ç»„å¹¶åœ¨æœ€åéå†è¾“å‡ºæ•°æ®
 	void Animal_Feeded_Add_Mess(Animal*,int);
 	bool get_state();
 	void Reopen();
 
 private:
-	int Closed_Days;	//¿´¿´ÓĞÃ»ÓĞ½øĞĞ¼ÆËã
+	int Closed_Days;	//çœ‹çœ‹æœ‰æ²¡æœ‰è¿›è¡Œè®¡ç®—
 	bool State;
 	int mess;
 };
@@ -83,11 +82,11 @@ class AnimalFood
 {
 public:
 	AnimalFood(string type);
-	AnimalFood(int num, int price,string type);	//¸øFoodSeller
-	AnimalFood(int num, string type);			//¸øChild
+	AnimalFood(int num, int price,string type);	//ç»™FoodSeller
+	AnimalFood(int num, string type);			//ç»™Child
 	~AnimalFood(){	delete this;}
 	void Selled(int);	//Seller
-	void Feeded(int);	//Child,ºóÃæÊÓÇé¿öÊ¹ÓÃ
+	void Feeded(int);	//Child,åé¢è§†æƒ…å†µä½¿ç”¨
 	void Child_GetFood(int);
 	int Get_Num();
 
@@ -133,7 +132,7 @@ class Money
 public:
 	Money();
 	~Money() {};
-	void InitSum(int);	//ÓÃÓÚ³õÊ¼»¯
+	void InitSum(int);	//ç”¨äºåˆå§‹åŒ–
 	void Add(int);
 	void Set(int);
 	int return_sum();
@@ -183,7 +182,7 @@ public:
 	int Judge_OutofStore();
 	void SellP(int);
 	void SellB(int);
-	void SellC(int);	//ÕâÈı¸ö¶¼Òª½øĞĞ¶Ônum?=0µÄ¼ì²é
+	void SellC(int);	//è¿™ä¸‰ä¸ªéƒ½è¦è¿›è¡Œå¯¹num?=0çš„æ£€æŸ¥
 	int Get_Benefit();
 
 private:
