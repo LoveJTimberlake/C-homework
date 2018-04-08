@@ -142,6 +142,8 @@ public:
 	friend Money operator-(Money& m1, Money& m2);
 private:
 	int sum;
+	int dollar;
+	int cent;
 	
 };
 
